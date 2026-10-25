@@ -1,0 +1,20 @@
+# Two real recordings of the RA0E1 "unknown device" (Part 2), decoded with REA:
+#   node scripts/rea.mjs decode-signal-recording capture.vcd --input_format vcd \
+#     --decoders spi:clk=clk:mosi=mosi:cs=cs --annotations spi=mosi-transfer --all_lines
+# Columns: sample range, decoder, MOSI bytes of one CS-low transfer.
+
+# Recording 1
+3032-19222 spi-1: A5 10 02 00 D9 6E
+22316-41061 spi-1: A5 20 03 00 FF 00 79
+64362-78010 spi-1: A5 01 01 AB 0E
+81098-97289 spi-1: A5 10 02 00 DA 6D
+100383-119127 spi-1: A5 20 03 00 80 FF F9
+142428-156071 spi-1: A5 01 01 AC 09
+
+# Recording 2
+3032-21771 spi-1: A5 20 03 80 00 FF F9
+45072-58714 spi-1: A5 01 01 6C C9
+61802-77987 spi-1: A5 10 02 00 DB 6C
+81081-99820 spi-1: A5 20 03 FF 00 00 79
+123121-136763 spi-1: A5 01 01 6D C8
+139852-156042 spi-1: A5 10 02 00 DC 6B
