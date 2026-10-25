@@ -1,0 +1,8 @@
+# Recordings and Python cache
+*.vcd
+__pycache__/
+# IDE projects (STM32CubeIDE / e2 studio), if you copy them in here
+Debug/
+Release/
+.metadata/
+.settings/
